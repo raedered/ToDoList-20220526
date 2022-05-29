@@ -14,4 +14,19 @@
 			now()
 		)
 	</insert>
+	<update id="updateToDoList" parameterType="com.springboot.todolist.domain.todolist.ToDoList">
+		update
+			todolist_mst
+		set
+			content = #{content}
+		where
+			id = #{id}
+	</update>
+	<delete id="deleteToDoList" parameterType="Integer">
+	delete
+	from
+		todolist_mst
+	where
+		id = #{id}
+	</delete>
 </mapper>

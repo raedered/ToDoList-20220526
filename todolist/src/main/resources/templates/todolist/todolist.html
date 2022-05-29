@@ -2,25 +2,26 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="/static/css/todolist.css">
 <title>Insert title here</title>
+<link rel="stylesheet" href="/static/css/todolist.css">
+<script src="https://kit.fontawesome.com/ede2458143.js" crossorigin="anonymous"></script>
 </head>
 <body>
 	<div id="container">
-		<div>
+		<div class="todolist-title">
 			<h1>My To Do List</h1>
 		</div>
 		<form action="">	
-			<div>
+			<div class="text-content">
 				<input type="text" class="text-input" placeholder="새로운 할일"> 
+				<button>추가</button>
 			</div>
-			<button>추가</button>
 		</form>
 		<div class="todolist">
 			<ul>
 			</ul>
 		</div>
 	</div>
-	<script type="text/JavaScript" src="/static/css/js/todolist.js"></script>
+	<script src="/static/js/todolist.js"></script>
 </body>
 </html>
