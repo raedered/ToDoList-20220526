@@ -5,8 +5,8 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.springboot.todolist.domain.todolist.ToDoList;
-import com.springboot.todolist.domain.todolist.ToDoListRepository;
+import com.springboot.todolist.domain.ToDoList;
+import com.springboot.todolist.domain.ToDoListRepository;
 import com.springboot.todolist.web.dto.ToDoListInsertReqDto;
 import com.springboot.todolist.web.dto.ToDoListUpdateReqDto;
 
@@ -19,8 +19,9 @@ public class ToDoListServiceImpl implements ToDoListService{
 
 	@Override
 	public List<ToDoList> getToDoListAll() {
-		List<ToDoList> getListAll = toDoListRepository.getToDoListAll();
+		List<ToDoList> getListAll = new ArrayList<ToDoList>();
 		
+		toDoListRepository.getToDoListAll();
 		return getListAll;
 	}
 

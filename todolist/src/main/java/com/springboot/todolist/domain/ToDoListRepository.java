@@ -1,4 +1,4 @@
-package com.springboot.todolist.domain.todolist;
+package com.springboot.todolist.domain;
 
 import java.util.List;
 

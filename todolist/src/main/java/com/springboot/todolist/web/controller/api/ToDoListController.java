@@ -15,8 +15,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.springboot.todolist.domain.todolist.ToDoList;
-import com.springboot.todolist.domain.todolist.ToDoListRepository;
+import com.springboot.todolist.domain.ToDoList;
+import com.springboot.todolist.domain.ToDoListRepository;
 import com.springboot.todolist.service.ToDoListService;
 import com.springboot.todolist.web.dto.ToDoListInsertReqDto;
 import com.springboot.todolist.web.dto.ToDoListUpdateReqDto;

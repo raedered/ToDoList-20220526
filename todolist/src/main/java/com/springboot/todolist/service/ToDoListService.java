@@ -2,7 +2,7 @@ package com.springboot.todolist.service;
 
 import java.util.List;
 
-import com.springboot.todolist.domain.todolist.ToDoList;
+import com.springboot.todolist.domain.ToDoList;
 import com.springboot.todolist.web.dto.ToDoListInsertReqDto;
 import com.springboot.todolist.web.dto.ToDoListUpdateReqDto;
 

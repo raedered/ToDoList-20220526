@@ -1,4 +1,6 @@
-package com.springboot.todolist.web.dto;
+package com.springboot.todolist.domain;
+
+import java.time.LocalDateTime;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,8 +11,10 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class ToDoListResppDto {
+public class ToDoList {
 	private int id;
 	private int usercode;
 	private String content;
+	private LocalDateTime createdate;
+	private LocalDateTime updatedate;
 }

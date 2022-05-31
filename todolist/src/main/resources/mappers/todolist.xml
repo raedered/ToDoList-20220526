@@ -2,8 +2,9 @@
 <!DOCTYPE mapper
   PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.springboot.todolist.domain.todolist.ToDoListRepository">
-	<insert id="insertToDoList" parameterType="com.springboot.todolist.domain.todolist.ToDoList">
+<mapper namespace="com.springboot.todolist.domain.ToDoListRepository">
+	
+	<insert id="insertToDoList" parameterType="com.springboot.todolist.domain.ToDoList">
 		insert into
 			todolist_mst
 		values(
@@ -14,7 +15,8 @@
 			now()
 		)
 	</insert>
-	<update id="updateToDoList" parameterType="com.springboot.todolist.domain.todolist.ToDoList">
+	
+	<update id="updateToDoList" parameterType="com.springboot.todolist.domain.ToDoList">
 		update
 			todolist_mst
 		set
@@ -22,6 +24,7 @@
 		where
 			id = #{id}
 	</update>
+	
 	<delete id="deleteToDoList" parameterType="Integer">
 	delete
 	from

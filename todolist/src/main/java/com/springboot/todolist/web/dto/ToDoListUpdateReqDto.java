@@ -4,7 +4,7 @@ package com.springboot.todolist.web.dto;
 
 import javax.validation.constraints.NotBlank;
 
-import com.springboot.todolist.domain.todolist.ToDoList;
+import com.springboot.todolist.domain.ToDoList;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
